@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUADA - LAÇO DE REPETIÇÃO</title>
+    <style>
+        body{
+            background-color: green;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+
+        }
+            #entrada{
+                background-color: deepskyblue;
+                border: none;
+                outline: none;
+                border-radius: 15px;
+                padding: 15px;
+                color: white;
+            }
+                #botaoCalcular{
+                    padding: 15px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: gray;
+                    color: white;
+                }
+                    #botaoCalcular:hover{
+                        cursor: pointer;
+                        background-color: red;
+
+                    }
+    </style>
+</head>
+<body>
+    <h1>Laço de Repetição</h1>
+    <h3>Tabuada (normal)</h3>
+    <input id="entrada" value="Tabuada do: " onfocus="this.value=''"><br><br>
+    <button id="botaoCalcular" onclick="calcular()">Calcular</button>
+    <script>
+            function calcular(){
+                var entrada = parseInt(document.getElementById('entrada').value);
+                for(i=1; i<=100; i++)
+                console.log(entrada+" x " + i +" = "+ (entrada*i));
+            }
+    </script>
+</body>
+</html>
